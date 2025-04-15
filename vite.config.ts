@@ -5,7 +5,6 @@ import nodePolyfills from 'vite-plugin-node-stdlib-browser';
 import eslint from 'vite-plugin-eslint';
 import svgr from 'vite-plugin-svgr';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
     alias: {
@@ -20,7 +19,15 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  optimizeDeps: {
+    exclude: ['@polkadot/wasm-crypto'], 
+  },
+  build: {
+    outDir: 'build',
+    rollupOptions: {
+      external: ['@polkadot/wasm-crypto'], 
+    },
+  },
   plugins: [svgr(), react(), nodePolyfills(), eslint()],
   assetsInclude: ['**/*.wasm?inline', '**/*.txt?inline'],
-  build: { outDir: 'build' },
 });
