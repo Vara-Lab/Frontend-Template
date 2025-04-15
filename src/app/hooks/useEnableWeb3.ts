@@ -20,7 +20,7 @@ export const useEnableWeb3 = () => {
       }
   
       syncWeb3();
-    }, [wallets]);
+    }, [wallets,isEnable]);
   
     return {
       web3IsEnable
