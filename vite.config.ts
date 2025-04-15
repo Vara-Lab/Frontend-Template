@@ -19,15 +19,6 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
-  optimizeDeps: {
-    exclude: ['@polkadot/wasm-crypto'], 
-  },
-  build: {
-    outDir: 'build',
-    rollupOptions: {
-      external: ['@polkadot/wasm-crypto'], 
-    },
-  },
   plugins: [svgr(), react(), nodePolyfills(), eslint()],
   assetsInclude: ['**/*.wasm?inline', '**/*.txt?inline'],
 });
