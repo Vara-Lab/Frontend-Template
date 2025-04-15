@@ -10,7 +10,7 @@ import "@gear-js/vara-ui/dist/style.css";
 
 function Component() {
   const { isApiReady } = useApi();
-  const { isAccountReady, account } = useAccount();
+  const { isAccountReady } = useAccount();
   const { web3IsEnable } = useEnableWeb3();
   const isAppReady = isApiReady && isAccountReady && web3IsEnable;
 
