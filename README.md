@@ -1,4 +1,4 @@
-## Vite-Template
+## React + Vite-Template
 
 To install the dependencies you put "yarn" in the console, and to run it you use "yarn start"
 
@@ -19,7 +19,7 @@ export const sponsorMnemonic = "";
 5. You can try the frontend template on gitpod!
 
 <p align="center">
-  <a href="https://gitpod.io/#https://github.com/Vara-Lab/Chackra-UI-Vite-Sails-Template.git" target="_blank">
+  <a href="https://gitpod.io/#https://github.com/Vara-Lab/Frontend-Template.git" target="_blank">
     <img src="https://gitpod.io/button/open-in-gitpod.svg" width="240" alt="Gitpod">
   </a>
 </p>
