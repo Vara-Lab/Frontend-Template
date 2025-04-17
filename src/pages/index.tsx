@@ -1,11 +1,9 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./home";
-import { Main } from "./main";
 import { NotFound } from "./not-found";
 
 const routes = [
   { path: '/', Page: Home },
-  { path: '/main', Page: Main },
   { path: '/*', Page: NotFound }
 ];
 
